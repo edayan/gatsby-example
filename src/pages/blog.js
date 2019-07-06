@@ -1,10 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import "../components/blog.css"
+import styles from "../components/blog.module.css"
 export default () => {
   return (
     <Layout>
-      <h1 className="blog-title">This is our blog page</h1>
+      <div className={styles.blog}>
+        <h1 className={styles.title}>This is our blog page</h1>
+        <h2>This is second heading</h2>
+      </div>
     </Layout>
   )
 }
