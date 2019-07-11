@@ -10,7 +10,7 @@ module.exports = {
     title: 'Tutorial',
     description: 'Just some description',
     author: '@edayan',
-    data: ['item1', 'item2'],
+    data: {name : 'saju', age: '30'},
   },
   plugins: [
     `gatsby-plugin-sass`,
