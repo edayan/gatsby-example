@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const Header = () => {
   const {
-    site: { siteMetadata },
+    site: { siteMetadata: info },
   } = useStaticQuery(graphql`
     {
       site {
@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <div>
-      <h1>author: {siteMetadata.author}</h1>
-      <h1>Title:{siteMetadata.title}</h1>
+      <h1>author: {info.author}</h1>
+      <h1>Title:{info.title}</h1>
     </div>
   )
 }
