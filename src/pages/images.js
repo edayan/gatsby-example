@@ -1,8 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Images from '../examples/images'
 
-const Images = () => {
-  return <Layout>This is my images page</Layout>
+const images = () => {
+  return (
+    <Layout>
+      <Images />
+    </Layout>
+  )
 }
 
-export default Images
+export default images
